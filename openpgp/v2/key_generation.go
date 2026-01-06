@@ -13,17 +13,17 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/ProtonMail/go-crypto/openpgp/ecdh"
-	"github.com/ProtonMail/go-crypto/openpgp/ecdsa"
-	"github.com/ProtonMail/go-crypto/openpgp/ed25519"
-	"github.com/ProtonMail/go-crypto/openpgp/ed448"
-	"github.com/ProtonMail/go-crypto/openpgp/eddsa"
-	"github.com/ProtonMail/go-crypto/openpgp/errors"
-	"github.com/ProtonMail/go-crypto/openpgp/internal/algorithm"
-	"github.com/ProtonMail/go-crypto/openpgp/internal/ecc"
-	"github.com/ProtonMail/go-crypto/openpgp/packet"
-	"github.com/ProtonMail/go-crypto/openpgp/x25519"
-	"github.com/ProtonMail/go-crypto/openpgp/x448"
+	"github.com/prequel-co/go-crypto/openpgp/ecdh"
+	"github.com/prequel-co/go-crypto/openpgp/ecdsa"
+	"github.com/prequel-co/go-crypto/openpgp/ed25519"
+	"github.com/prequel-co/go-crypto/openpgp/ed448"
+	"github.com/prequel-co/go-crypto/openpgp/eddsa"
+	"github.com/prequel-co/go-crypto/openpgp/errors"
+	"github.com/prequel-co/go-crypto/openpgp/internal/algorithm"
+	"github.com/prequel-co/go-crypto/openpgp/internal/ecc"
+	"github.com/prequel-co/go-crypto/openpgp/packet"
+	"github.com/prequel-co/go-crypto/openpgp/x25519"
+	"github.com/prequel-co/go-crypto/openpgp/x448"
 )
 
 type userIdData struct {

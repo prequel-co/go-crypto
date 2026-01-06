@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ProtonMail/go-crypto/openpgp/packet"
+	"github.com/prequel-co/go-crypto/openpgp/packet"
 )
 
 var foreignKeys = []string{

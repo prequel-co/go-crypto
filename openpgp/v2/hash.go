@@ -3,7 +3,7 @@ package v2
 import (
 	"crypto"
 
-	"github.com/ProtonMail/go-crypto/openpgp/internal/algorithm"
+	"github.com/prequel-co/go-crypto/openpgp/internal/algorithm"
 )
 
 // HashIdToHash returns a crypto.Hash which corresponds to the given OpenPGP

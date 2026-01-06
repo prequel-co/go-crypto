@@ -14,12 +14,12 @@ import (
 	"math/big"
 	"strconv"
 
-	"github.com/ProtonMail/go-crypto/openpgp/ecdh"
-	"github.com/ProtonMail/go-crypto/openpgp/elgamal"
-	"github.com/ProtonMail/go-crypto/openpgp/errors"
-	"github.com/ProtonMail/go-crypto/openpgp/internal/encoding"
-	"github.com/ProtonMail/go-crypto/openpgp/x25519"
-	"github.com/ProtonMail/go-crypto/openpgp/x448"
+	"github.com/prequel-co/go-crypto/openpgp/ecdh"
+	"github.com/prequel-co/go-crypto/openpgp/elgamal"
+	"github.com/prequel-co/go-crypto/openpgp/errors"
+	"github.com/prequel-co/go-crypto/openpgp/internal/encoding"
+	"github.com/prequel-co/go-crypto/openpgp/x25519"
+	"github.com/prequel-co/go-crypto/openpgp/x448"
 )
 
 // EncryptedKey represents a public-key encrypted session key. See RFC 4880,
@@ -50,7 +50,7 @@ func (e *EncryptedKey) parse(r io.Reader) (err error) {
 		return errors.UnsupportedError("unknown EncryptedKey version " + strconv.Itoa(int(buf[0])))
 	}
 	if e.Version == 6 {
-		//Read a one-octet size of the following two fields.
+		// Read a one-octet size of the following two fields.
 		if _, err = readFull(r, buf[:1]); err != nil {
 			return
 		}

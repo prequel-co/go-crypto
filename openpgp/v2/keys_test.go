@@ -13,15 +13,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ProtonMail/go-crypto/openpgp/armor"
-	"github.com/ProtonMail/go-crypto/openpgp/ecdh"
-	"github.com/ProtonMail/go-crypto/openpgp/ecdsa"
-	"github.com/ProtonMail/go-crypto/openpgp/eddsa"
-	"github.com/ProtonMail/go-crypto/openpgp/elgamal"
-	"github.com/ProtonMail/go-crypto/openpgp/errors"
-	"github.com/ProtonMail/go-crypto/openpgp/internal/algorithm"
-	"github.com/ProtonMail/go-crypto/openpgp/packet"
-	"github.com/ProtonMail/go-crypto/openpgp/s2k"
+	"github.com/prequel-co/go-crypto/openpgp/armor"
+	"github.com/prequel-co/go-crypto/openpgp/ecdh"
+	"github.com/prequel-co/go-crypto/openpgp/ecdsa"
+	"github.com/prequel-co/go-crypto/openpgp/eddsa"
+	"github.com/prequel-co/go-crypto/openpgp/elgamal"
+	"github.com/prequel-co/go-crypto/openpgp/errors"
+	"github.com/prequel-co/go-crypto/openpgp/internal/algorithm"
+	"github.com/prequel-co/go-crypto/openpgp/packet"
+	"github.com/prequel-co/go-crypto/openpgp/s2k"
 )
 
 var hashes = []crypto.Hash{
@@ -2041,7 +2041,7 @@ func TestAllowAllKeyFlagsWhenMissing(t *testing.T) {
 		t.Fatal("PubKeyAlgo must be valid for signature and encryption")
 	}
 
-	/// Flags valid, but not set.
+	// / Flags valid, but not set.
 	primarySelfSignature.FlagsValid = true
 	primarySelfSignature.FlagSign = false
 	primarySelfSignature.FlagCertify = false
@@ -2059,7 +2059,7 @@ func TestAllowAllKeyFlagsWhenMissing(t *testing.T) {
 		t.Error("isValidCertificationKey must be false")
 	}
 
-	/// Flags not valid, but InsecureAllowAllKeyFlagsWhenMissing set.
+	// / Flags not valid, but InsecureAllowAllKeyFlagsWhenMissing set.
 	primarySelfSignature.FlagsValid = false
 	config = &packet.Config{InsecureAllowAllKeyFlagsWhenMissing: true}
 

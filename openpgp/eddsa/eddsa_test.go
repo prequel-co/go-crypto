@@ -8,7 +8,7 @@ import (
 	"io"
 	"testing"
 
-	"github.com/ProtonMail/go-crypto/openpgp/internal/ecc"
+	"github.com/prequel-co/go-crypto/openpgp/internal/ecc"
 )
 
 func TestCurves(t *testing.T) {

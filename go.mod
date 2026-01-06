@@ -1,4 +1,4 @@
-module github.com/ProtonMail/go-crypto
+module github.com/prequel-co/go-crypto
 
 go 1.24.0
 

@@ -20,7 +20,7 @@ import (
 	"errors"
 	"math/bits"
 
-	"github.com/ProtonMail/go-crypto/internal/byteutil"
+	"github.com/prequel-co/go-crypto/internal/byteutil"
 )
 
 type ocb struct {

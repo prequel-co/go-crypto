@@ -7,7 +7,7 @@ package packet
 import (
 	"io"
 
-	"github.com/ProtonMail/go-crypto/openpgp/errors"
+	"github.com/prequel-co/go-crypto/openpgp/errors"
 )
 
 type PacketReader interface {
@@ -51,7 +51,7 @@ func (r *Reader) Next() (p Packet, err error) {
 			}
 			return nil, err
 		} else {
-			//A marker packet MUST be ignored when received
+			// A marker packet MUST be ignored when received
 			switch p.(type) {
 			case *Marker:
 				continue
@@ -82,7 +82,7 @@ func (r *Reader) NextWithUnsupported() (p Packet, err error) {
 			}
 			return
 		} else {
-			//A marker packet MUST be ignored when received
+			// A marker packet MUST be ignored when received
 			switch p.(type) {
 			case *Marker:
 				continue
@@ -170,7 +170,7 @@ func (r *CheckReader) Next() (p Packet, err error) {
 			r.readers = r.readers[:len(r.readers)-1]
 			continue
 		}
-		//A marker packet MUST be ignored when received
+		// A marker packet MUST be ignored when received
 		switch p.(type) {
 		case *Marker:
 			continue

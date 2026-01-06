@@ -5,9 +5,9 @@ import (
 	"bytes"
 	"crypto/elliptic"
 
-	"github.com/ProtonMail/go-crypto/bitcurves"
-	"github.com/ProtonMail/go-crypto/brainpool"
-	"github.com/ProtonMail/go-crypto/openpgp/internal/encoding"
+	"github.com/prequel-co/go-crypto/bitcurves"
+	"github.com/prequel-co/go-crypto/brainpool"
+	"github.com/prequel-co/go-crypto/openpgp/internal/encoding"
 )
 
 const Curve25519GenName = "Curve25519"

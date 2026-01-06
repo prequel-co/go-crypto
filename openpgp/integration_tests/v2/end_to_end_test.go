@@ -12,17 +12,17 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ProtonMail/go-crypto/openpgp/armor"
-	"github.com/ProtonMail/go-crypto/openpgp/packet"
-	openpgp "github.com/ProtonMail/go-crypto/openpgp/v2"
+	"github.com/prequel-co/go-crypto/openpgp/armor"
+	"github.com/prequel-co/go-crypto/openpgp/packet"
+	openpgp "github.com/prequel-co/go-crypto/openpgp/v2"
 )
 
-/////////////////////////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////////////////////
 // TODO:
 //
 // - Move signature line endings test to packet unit tests.
 //
-/////////////////////////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////////////////////
 
 type testVector struct {
 	Message                string

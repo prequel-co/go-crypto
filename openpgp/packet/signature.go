@@ -16,13 +16,13 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/ProtonMail/go-crypto/openpgp/ecdsa"
-	"github.com/ProtonMail/go-crypto/openpgp/ed25519"
-	"github.com/ProtonMail/go-crypto/openpgp/ed448"
-	"github.com/ProtonMail/go-crypto/openpgp/eddsa"
-	"github.com/ProtonMail/go-crypto/openpgp/errors"
-	"github.com/ProtonMail/go-crypto/openpgp/internal/algorithm"
-	"github.com/ProtonMail/go-crypto/openpgp/internal/encoding"
+	"github.com/prequel-co/go-crypto/openpgp/ecdsa"
+	"github.com/prequel-co/go-crypto/openpgp/ed25519"
+	"github.com/prequel-co/go-crypto/openpgp/ed448"
+	"github.com/prequel-co/go-crypto/openpgp/eddsa"
+	"github.com/prequel-co/go-crypto/openpgp/errors"
+	"github.com/prequel-co/go-crypto/openpgp/internal/algorithm"
+	"github.com/prequel-co/go-crypto/openpgp/internal/encoding"
 )
 
 const (
