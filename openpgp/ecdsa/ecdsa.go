@@ -4,7 +4,7 @@ package ecdsa
 
 import (
 	"errors"
-	"github.com/ProtonMail/go-crypto/openpgp/internal/ecc"
+	"github.com/prequel-co/go-crypto/openpgp/internal/ecc"
 	"io"
 	"math/big"
 )

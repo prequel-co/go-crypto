@@ -10,8 +10,8 @@ import (
 	"io"
 	"strconv"
 
-	"github.com/ProtonMail/go-crypto/openpgp/errors"
-	"github.com/ProtonMail/go-crypto/openpgp/internal/algorithm"
+	"github.com/prequel-co/go-crypto/openpgp/errors"
+	"github.com/prequel-co/go-crypto/openpgp/internal/algorithm"
 )
 
 // OnePassSignature represents a one-pass signature packet. See RFC 4880,
@@ -97,7 +97,7 @@ func (ops *OnePassSignature) parse(r io.Reader) (err error) {
 
 // Serialize marshals the given OnePassSignature to w.
 func (ops *OnePassSignature) Serialize(w io.Writer) error {
-	//v3 length 1+1+1+1+8+1 =
+	// v3 length 1+1+1+1+8+1 =
 	packetLength := 13
 	if ops.Version == 6 {
 		// v6 length 1+1+1+1+1+len(salt)+32+1 =
