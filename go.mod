@@ -1,10 +1,10 @@
 module github.com/prequel-co/go-crypto
 
-go 1.23.0
+go 1.24.0
 
 require (
 	github.com/cloudflare/circl v1.6.2
-	golang.org/x/crypto v0.41.0
+	golang.org/x/crypto v0.46.0
 )
 
-require golang.org/x/sys v0.35.0 // indirect
+require golang.org/x/sys v0.39.0 // indirect
